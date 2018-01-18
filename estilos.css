@@ -22,8 +22,6 @@ body{
 }
 
 .cabecera h1{
-  margin-top: 2%;
-  margin-bottom: 5%;
   float: left;
   text-shadow: 2px 2px #02010a;
   font-size: 1.5em;
@@ -39,15 +37,16 @@ a{
   color: white;
 }
 
-#menu-principal .inicio{
+#menu-principal .paisajes{
   text-decoration: underline;
   text-decoration-color: #5b7989;
 }
 
 .imagen-central{
-  background-color: #82c3a6;
+  background-color: #d5c75f;
   padding-left: 1em;
   padding-right: 1em;
+  height: 20px;
 }
 
 img{
@@ -57,40 +56,35 @@ img{
   box-shadow: 2px 2px #02010a;
 }
 
-.contenedor{
+.contenedor1{
   background-color: #d5c75f;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.contenedor2{
   display: flex;
   flex-direction: row;
 }
 
-.contenedor a{
-  color: black;
-}
-
-.contenedor img{
-  width: 100%;
+.contenedor3{
+  display: flex;
+  flex-direction: row;
 }
 
 .imagen1 img{
-  transition-property: transform, box-shadow;
-  transition-duration: 1s;
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
 }
 
-.imagen1 img:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px #82c3a6;
+.imagen2, .imagen4, .imagen6 img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-.imagen2 img{
-  transition-property: transform, box-shadow;
-  transition-duration: 1s;
-}
-
-.imagen2 img:hover{
-  transform: translate(20px,-5px);
-  box-shadow: 2px 2px #82c3a6;
+.imagen3 img{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 
 .pie-pagina{
@@ -142,15 +136,21 @@ body{
     height: 5em;
   }
   .imagen-central{
-    background-color: #82c3a6;
+    padding-left: 0em;
+    padding-right: 0em;
+    height: 10px;
+  }
+  .contenedor1{
     padding-left: 0em;
     padding-right: 0em;
   }
-  .imagen-central img{
-    margin-top: 1em;
-    margin-bottom: 1em;
+  .contenedor2{
+    padding-left: 0em;
+    padding-right: 0em;
+    display: flex;
+    flex-direction: column;
   }
-  .contenedor{
+  .contenedor3{
     padding-left: 0em;
     padding-right: 0em;
     display: flex;
